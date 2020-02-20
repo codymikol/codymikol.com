@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "index": "04.",
+      "name": "mind-your-banners",
+      "title": "Mind Your Banners",
+      "description": "This is your one stop cop for social media banners \uD83D\uDC75\uD83C\uDFFB. ",
+      "tech": "Svelte",
+      "link": "https://www.mindyourbanners.com",
+      "date": "Feb 017, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "link": "http://yingyingzhang.com/"
+        },
+        {
+          "name": "shu",
+          "link": "http://shuli.design"
+        }
+      ]
+    },
+    {
+      "index": "03.",
+      "name": "json-link",
+      "title": "JSON link",
+      "description": "JSON.link makes it easy to author, document, share, and consume JSON",
+      "tech": "React, NodeJS",
+      "link": "https://json.link/",
+      "date": "Feb 02, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "link": " http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "02.",
+      "name": "my-wifi-sign",
+      "title": "My WiFi Sign",
+      "description": "Quickly create a printable sign with your WiFi credentials",
+      "tech": "NestJS, Vanilla JS",
+      "link": "https://mywifisign.com/",
+      "date": "Jan 25, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "link": " http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "01.",
+      "name": "badger",
+      "title": "Badger",
+      "description": "Badger is a fun, self-service name badge printer",
+      "tech": "Go, Vanilla JS",
+      "link": "http://badger.ink/",
+      "date": "Jan 08, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "link": " http://yingyingzhang.com/"
+        }
+      ]
+    }
+  ]
+}

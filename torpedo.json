@@ -1,0 +1,9 @@
+{
+    "routes": [],
+    "watching_enabled": true,
+    "caching_enabled": false,
+    "address": "0.0.0.0",
+    "basic_auth": null,
+    "app_name": "codymikol",
+    "port": 9000
+}
