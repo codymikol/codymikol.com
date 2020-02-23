@@ -95,7 +95,7 @@
             font-weight: normal;
             font-size: 48px;
             line-height: 60px;
-            margin: 0;
+            margin: 0 20px 0 20px;
         }
 
         .rotated-link {
@@ -303,88 +303,13 @@
 </head>
 <body>
 
-<nav>
-    <div class="formatted-name">
-        { <img src="assets/images/smile.svg" alt="Have a wonderful day c:"> }
-    </div>
-    <div>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <!-- <a>Contact</a> -->
-    </div>
-</nav>
+{% include '../partials/_header' %}
 
 <main>
-    <p>Hey 👋🏻 I’m Cody,a software engineer based in Bethlehem, PA. My hobby is programming, so I work after work, and
-        then wake up and work some more.</p>
-    <div>
-        <a class="rotated-link">Ok, show me the work</a>
-    </div>
-    <section id="work" class="project-container">
-        {% for project in projects limit: 10 %}
-            <div class="project">
-                <a class="mt-4 og-project" href="{{ project.link }}" target="_blank">
-                    <img src="assets/ogs/og-{{ project.name }}.png" alt="{{ project.title }}">
-                </a>
-                <h2>{{ project.title }}</h2>
-                <p class="text-center text-mono text-green text-base md:text-left">{{ project.tech }}</p>
-            </div>
-        {% endfor %}
-    </section>
-    <section class="about-container">
-        <div id="about" class="about">
-            <div class="about-inner">
-                <h2>About Cody</h2>
-                <p>
-                    Software Engineer currently doing R&D at Jack Henry and Associates. Most spare time is spent hacking
-                    on side projects with <a style="color: white" href="http://justshipped.io" target="_blank">JustShipped</a> or contributing to various FOSS projects.
-                </p>
-                <p>Here are a few technologies I&apos;ve been working with recently</p>
-                <div class="skills">
-                    <ul>
-                        <li>Svelte</li>
-                        <li>React</li>
-                        <li>AngularJS</li>
-                        <li>Vanilla JS</li>
-                    </ul>
-                    <ul>
-                        <li>Kotlin</li>
-                        <li>Go</li>
-                        <li>NodeJS</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="portrait">
-            <img class="me" src="assets/images/cody.png" alt="A picture of me Cody Mikol, very exciting stuff!">
-            <p class="rotated-link">I don’t look this<br/> serious in real life</p>
-            <img class="rotated-link smile-boi" src="assets/images/white-smile.svg" alt="Have a wonderful day c:">
-        </div>
-    </section>
-    <section class="footer">
-        <div style="display: flex; flex-direction: row">
-            <p class="get-in-touch rotated-link">Get in touch</p>
-            <img src="assets/images/arrow.svg" style="transform: translate(15px, -22px);"
-                 alt="Its an arrow pointing at me, how exciting is that?">
-        </div>
-        <div class="bottom-container">
-            <div class="contact-icon-container">
-                <div>
-                    <a href="https://www.linkedin.com/in/cody-mikol-684a32b3/" target="_blank">
-                        <button>{% include '../partials/_linkedin' %}</button>
-                    </a>
-                    <a href="https://github.com/codymikol" target="_blank">
-                        <button>{% include '../partials/_github' %}</button>
-                    </a>
-                    <a href="mailto:codymikol@gmail.com" target="_blank">
-                        <button>{% include '../partials/_mail' %}</button>
-                    </a>
-                </div>
-            </div>
-            <p class="copyright">© 2020 Cody Mikol. All rights reserved.</p>
-        </div>
-    </section>
+    {% include '../partials/_intro' %}
+    {% include '../partials/_work' %}
+    {% include '../partials/_about' %}
+    {% include '../partials/_footer' %}
 </main>
 
 </body>

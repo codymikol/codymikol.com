@@ -1,0 +1,12 @@
+
+<section id="work" class="project-container">
+    {% for project in projects limit: 10 %}
+        <div class="project">
+            <a class="mt-4 og-project" href="{{ project.link }}" target="_blank">
+                <img src="assets/ogs/og-{{ project.name }}.png" alt="{{ project.title }}">
+            </a>
+            <h2>{{ project.title }}</h2>
+            <p class="text-center text-mono text-green text-base md:text-left">{{ project.tech }}</p>
+        </div>
+    {% endfor %}
+</section>
