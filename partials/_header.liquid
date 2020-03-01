@@ -1,3 +1,52 @@
+<style>
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+    }
+
+    nav * a,a:visited {
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-right: 40px;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav * a:last-child {
+        margin-right: 80px;
+    }
+
+    nav * a:active,a:hover {
+        color: #13AA52;
+        text-decoration: underline;
+    }
+
+    .formatted-name {
+        color: var(--gray-shade-1);
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 29px;
+        line-height: 29px;
+        text-align: center;
+        margin: 21px 0 22px 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .formatted-name > img {
+        margin: 8px;
+    }
+
+</style>
+
 <nav>
     <div class="formatted-name">
         { <img src="assets/images/smile.svg" alt="Have a wonderful day c:"> }

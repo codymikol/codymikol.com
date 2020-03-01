@@ -1,3 +1,60 @@
+<style>
+    section.footer {
+        display: flex;
+        flex-direction: column;
+        height: 376px;
+        align-items: center;
+    }
+    .bottom-container {
+        height: 85px;
+        margin-bottom: 60px;
+        margin-top: 98px;
+    }
+
+    .contact-icon-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-icon-container * button {
+        background: none;
+        border: none;
+        margin: 0 22px 0 22px;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        fill: #13AA52;
+    }
+
+    .contact-icon-container * a {
+        text-decoration: none;
+    }
+
+    .contact-icon-container * path {
+        fill: #828282;
+    }
+
+    .contact-icon-container * button:hover * path {
+        fill: #13AA52;
+    }
+
+    .contact-icon-container * button:active * path {
+        fill: #13c051;
+    }
+    .get-in-touch {
+        margin-top: 56px;
+    }
+    .copyright {
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #828282
+    }
+</style>
+
 <section class="footer">
     <div style="display: flex; flex-direction: row">
         <p class="get-in-touch rotated-link">Get in touch</p>
