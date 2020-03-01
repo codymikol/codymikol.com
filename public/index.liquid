@@ -4,6 +4,7 @@
 <head>
     <title>Cody Mikol</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
     <style>
 
@@ -62,6 +63,22 @@
             text-decoration-line: underline;
             color: #13AA52;
             transform: rotate(-8deg);
+        }
+
+        @media  screen and (max-width: 768px) {
+
+            main {
+                margin-top: 40px;
+            }
+
+            main > div {
+                justify-content: center;
+            }
+
+            .rotated-link {
+                font-size: 36px;
+                line-height: 48px;
+            }
         }
 
     </style>
