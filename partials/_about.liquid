@@ -84,6 +84,53 @@
         left: 165px;
         color: white;
     }
+
+    @media  screen and (max-width: 768px) {
+
+        .about * h2 {
+            margin-top: 60px;
+        }
+
+        .about-inner {
+            padding: 12px;
+        }
+
+        .about-container {
+            flex-direction: column;
+        }
+
+        .about-container > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .me {
+            position: relative;
+            max-width: calc(100% - 40px);
+            top: unset;
+            left: unset;
+        }
+
+        p.rotated-link {
+            position: relative;
+            bottom: unset;
+            left: unset;
+        }
+
+        .smile-boi {
+            position: relative;
+            left: unset;
+            bottom: unset;
+        }
+
+        .skills {
+            margin-left: 20px;
+            width: calc(100% - 20px);
+        }
+
+    }
 </style>
 
 <section class="about-container">
@@ -113,7 +160,9 @@
     </div>
     <div class="portrait">
         <img class="me" src="assets/images/cody.png" alt="A picture of me Cody Mikol, very exciting stuff!">
-        <p class="rotated-link">I don’t look this<br/> serious in real life</p>
-        <img class="rotated-link smile-boi" src="assets/images/white-smile.svg" alt="Have a wonderful day c:">
+        <div style="display: flex;">
+            <p class="rotated-link">I don’t look this<br/> serious in real life</p>
+            &nbsp;&nbsp;&nbsp;<img class="rotated-link smile-boi" src="assets/images/white-smile.svg" alt="Have a wonderful day c:">
+        </div>
     </div>
 </section>
