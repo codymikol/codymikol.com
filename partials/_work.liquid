@@ -1,0 +1,59 @@
+
+<style>
+    .project-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 80px 100px 0 80px;
+        max-width: 1404px;
+    }
+
+    .project * img {
+        width: 100%;
+        margin-top: 42px;
+    }
+
+    .project {
+        width: calc(50% - 80px);
+        margin: 0 40px 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project > h2 {
+        text-align: center;
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 42px;
+        margin: 16px 0 8px 0;
+        padding: 0;
+    }
+
+    .project > p {
+        text-align: center;
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #13AA52;
+        margin: 8px 0 0 0;
+        padding: 0;
+    }
+
+</style>
+
+<section id="work" class="project-container">
+    {% for project in projects limit: 10 %}
+        <div class="project">
+            <a class="mt-4 og-project" href="{{ project.link }}" target="_blank">
+                <img src="assets/ogs/og-{{ project.name }}.png" alt="{{ project.title }}">
+            </a>
+            <h2>{{ project.title }}</h2>
+            <p class="text-center text-mono text-green text-base md:text-left">{{ project.tech }}</p>
+        </div>
+    {% endfor %}
+</section>
