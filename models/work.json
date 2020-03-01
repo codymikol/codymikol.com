@@ -1,36 +1,71 @@
 {
   "projects": [
     {
-      "index": "04.",
-      "name": "mind-your-banners",
-      "title": "Mind Your Banners",
-      "description": "This is your one stop cop for social media banners \uD83D\uDC75\uD83C\uDFFB. ",
-      "tech": "Svelte",
-      "link": "https://www.mindyourbanners.com",
-      "date": "Feb 017, 2020",
+      "index": "05.",
+      "name": "burn-link",
+      "title": "BURN.link",
+      "description": "BURN.link lets you send secure, self-destructing messages",
+      "tech": "Svelte, OpenPGP, Twilio",
+      "link": "https://burn.link/",
+      "date": "Feb 29,2020",
       "members": [
         {
           "name":"cody",
+          "alt": "Cody Mikol",
           "link": "http://codymikol.com/"
         },
         {
+          "name":"john",
+          "alt": "John Flynn",
+          "link": "https://github.com/Neuman968/"
+        },
+        {
           "name":"kostas",
+          "alt": "Kostas Nasis",
           "link": "http://kostasnasis.com/"
         },
         {
           "name":"yy",
+          "alt": "YingYing Zhang",
           "link": "http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "04.",
+      "name": "mind-your-banners",
+      "title": "Mind Your Banners",
+      "description": "Mind Your Banners is the easiest way to find beautiful cover photos for your Facebook, Twitter and LinkedIn profiles",
+      "tech": "Svelte, Ruby",
+      "link": "https://www.mindyourbanners.com",
+      "date": "Feb 17, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "alt": "Kostas Nasis",
+          "link": "http://kostasnasis.com/"
         },
         {
           "name": "shu",
-          "link": "http://shuli.design"
+          "alt": "Shu Li",
+          "link": "http://shuli.design/"
+        },
+        {
+          "name":"yy",
+          "alt": "YingYing Zhang",
+          "link": "http://yingyingzhang.com/"
         }
       ]
     },
     {
       "index": "03.",
       "name": "json-link",
-      "title": "JSON link",
+      "title": "JSON.link",
       "description": "JSON.link makes it easy to author, document, share, and consume JSON",
       "tech": "React, NodeJS",
       "link": "https://json.link/",
@@ -38,14 +73,17 @@
       "members": [
         {
           "name":"cody",
+          "alt": "Cody Mikol",
           "link": "http://codymikol.com/"
         },
         {
           "name":"kostas",
+          "alt": "Kostas Nasis",
           "link": "http://kostasnasis.com/"
         },
         {
           "name":"yy",
+          "alt": "YingYing Zhang",
           "link": " http://yingyingzhang.com/"
         }
       ]
@@ -61,14 +99,17 @@
       "members": [
         {
           "name":"cody",
+          "alt": "Cody Mikol",
           "link": "http://codymikol.com/"
         },
         {
           "name":"kostas",
+          "alt": "Kostas Nasis",
           "link": "http://kostasnasis.com/"
         },
         {
           "name":"yy",
+          "alt": "YingYing Zhang",
           "link": " http://yingyingzhang.com/"
         }
       ]
@@ -84,14 +125,17 @@
       "members": [
         {
           "name":"cody",
+          "alt": "Cody Mikol",
           "link": "http://codymikol.com/"
         },
         {
           "name":"kostas",
+          "alt": "Kostas Nasis",
           "link": "http://kostasnasis.com/"
         },
         {
           "name":"yy",
+          "alt": "YingYing Zhang",
           "link": " http://yingyingzhang.com/"
         }
       ]
