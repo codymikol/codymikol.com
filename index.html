@@ -1,0 +1,733 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cody Mikol</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --code-font: JetBrains Mono, 'Courier New';
+            --handwritten-font: Caveat, cursive;
+            --dark-color: #363F39;
+            --primary-color: #30B484;
+            --gray-shade-1: #828282;
+        }
+
+        @font-face {
+            font-family: "JetBrains Mono";
+            src: url("./font/JetBrainsMono-1.0.3/web/eot/JetBrainsMono-Regular.eot");
+            src: url("./font/JetBrainsMono-1.0.3/web/woff/JetBrainsMono-Regular.woff") format("woff");
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        main {
+            margin-top: 108px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main > div {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 17px;
+        }
+
+        main > * {
+            max-width: 1040px;
+        }
+
+        main > p {
+            font-family: JetBrains Mono, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 60px;
+            margin: 0 20px 0 20px;
+        }
+
+        .rotated-link {
+            font-family: var(--handwritten-font);
+            display: block;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 48px;
+            cursor: pointer;
+            /*text-decoration-line: underline;*/
+            color: #13AA52;
+            transform: rotate(-8deg);
+        }
+
+        @media  screen and (max-width: 768px) {
+
+            main {
+                margin-top: 40px;
+            }
+
+            main > div {
+                justify-content: center;
+            }
+
+            .rotated-link {
+                font-size: 36px;
+                line-height: 48px;
+            }
+        }
+
+        .work{}
+
+
+    .project-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 80px 100px 0 80px;
+        max-width: 1404px;
+    }
+
+    .project * img {
+        width: 100%;
+        margin-top: 42px;
+    }
+
+    .project {
+        width: calc(50% - 80px);
+        margin: 0 40px 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project > h2 {
+        text-align: center;
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 42px;
+        margin: 16px 0 8px 0;
+        padding: 0;
+    }
+
+    .project > p {
+        text-align: center;
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #13AA52;
+        margin: 8px 0 0 0;
+        padding: 0;
+    }
+
+    @media  screen and (max-width: 768px) {
+
+        .project-container {
+            margin: 10px 10px 0 10px;
+        }
+
+        .project {
+            width: calc(100% - 40px);
+            margin: 0 20px 0 20px;
+        }
+    }
+
+        .intro{}
+
+
+    @media  screen and (max-width: 768px) {
+        p.intro {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+        .header{}
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+    }
+
+    .header-link {
+        color: black;
+    }
+
+    nav * a,a:visited {
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-right: 40px;
+        text-decoration: none;
+    }
+
+    nav * a:last-child {
+        margin-right: 80px;
+    }
+work after work, and then wake up and work some more.
+Ok, show me the work
+
+    nav * a:active,a:hover {
+        color: #13AA52;
+        text-decoration: underline;
+    }
+
+    .formatted-name {
+        color: var(--gray-shade-1);
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 29px;
+        line-height: 29px;
+        text-align: center;
+        margin: 21px 0 22px 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .formatted-name > img {
+        margin: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .formatted-name {
+            margin-left: 18px;
+        }
+        nav * a {
+            margin-right: 20px;
+        }
+        nav * a:last-child {
+            margin-right: 40px;
+        }
+    }
+
+        .about{}
+
+
+    .about-container {
+        color: white;
+        position: relative;
+        margin-top: 148px;
+        display: flex;
+        flex-direction: row;
+        background-color: #13AA52;
+        width: 100%;
+        min-height: 666px;
+        max-width: 100%;
+    }
+
+    .about-container > div {
+        width: 50%;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about * h2 {
+        margin-top: 120px;
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .about * p {
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about * li {
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 6px;
+    }
+
+    .about * ul {
+        padding: 0;
+        width: 50%;
+    }
+
+    .about-inner {
+        max-width: 500px;
+        padding: 0 40px;
+    }
+
+    .portrait {
+        position: relative;
+    }
+
+    .me {
+        position: absolute;
+        top: -39px;
+        max-width: calc(100% - 40px);
+        margin: 20px;
+        left: 0;
+    }
+
+    .smile-boi {
+        color: white;
+        position: absolute;
+        bottom: 147px;
+        right: 30px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        width: calc(100% - 10px);
+    }
+
+    .portrait p {
+        position: absolute;
+        bottom: 75px;
+        right: 84px;
+        color: white;
+    }
+
+    @media  screen and (max-width: 981px) {
+
+        .about * h2 {
+            margin-top: 60px;
+        }
+
+        .about-inner {
+            padding: 12px;
+        }
+
+        .about-container {
+            flex-direction: column;
+        }
+
+        .about-container > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .me {
+            position: relative;
+            max-width: calc(100% - 40px);
+            top: unset;
+            left: unset;
+        }
+
+        p.rotated-link {
+            position: relative;
+            bottom: unset;
+            left: unset;
+            right: unset;
+        }
+
+        .smile-boi {
+            position: relative;
+            left: unset;
+            bottom: unset;
+            right: unset;
+        }
+
+        .skills {
+            margin-left: 20px;
+            width: calc(100% - 20px);
+        }
+
+    }
+
+        .footer{}
+
+    section.footer {
+        display: flex;
+        flex-direction: column;
+        height: 376px;
+        align-items: center;
+    }
+    .bottom-container {
+        height: 85px;
+        margin-bottom: 60px;
+        margin-top: 98px;
+    }
+
+    .contact-icon-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-icon-container * button {
+        background: none;
+        border: none;
+        margin: 0 22px 0 22px;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        fill: #13AA52;
+    }
+
+    .contact-icon-container * a {
+        text-decoration: none;
+    }
+
+    .contact-icon-container * path {
+        fill: #828282;
+    }
+
+    .contact-icon-container * button:hover * path {
+        fill: #13AA52;
+    }
+
+    .contact-icon-container * button:active * path {
+        fill: #13c051;
+    }
+    .get-in-touch {
+        margin-top: 56px;
+    }
+    .copyright {
+        font-family: var(--code-font);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #828282
+    }
+    @media screen and (max-width: 768px) {
+        .copyright {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    </style>
+
+    <script>
+    (function() {
+
+    const projects =  [
+    {
+      "index": "06.",
+      "name": "orderly",
+      "title": "Orderly Menus",
+      "description": "Bringing customers mobile menus that don't suck",
+      "tech": "Vue",
+      "link": "https://order.ly",
+      "date": "Aug 12,2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        }
+      ]
+    },
+    {
+      "index": "05.",
+      "name": "burn-link",
+      "title": "BURN.link",
+      "description": "BURN.link lets you send secure, self-destructing messages",
+      "tech": "Svelte, OpenPGP, Twilio",
+      "link": "https://burn.link/",
+      "date": "Feb 29,2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"john",
+          "alt": "John Flynn",
+          "link": "https://github.com/Neuman968/"
+        },
+        {
+          "name":"kostas",
+          "alt": "Kostas Nasis",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "alt": "YingYing Zhang",
+          "link": "http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "04.",
+      "name": "mind-your-banners",
+      "title": "Mind Your Banners",
+      "description": "Mind Your Banners is the easiest way to find beautiful cover photos for your Facebook, Twitter and LinkedIn profiles",
+      "tech": "Svelte, Ruby",
+      "link": "https://www.mindyourbanners.com",
+      "date": "Feb 17, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "alt": "Kostas Nasis",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name": "shu",
+          "alt": "Shu Li",
+          "link": "http://shuli.design/"
+        },
+        {
+          "name":"yy",
+          "alt": "YingYing Zhang",
+          "link": "http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "03.",
+      "name": "json-link",
+      "title": "JSON.link",
+      "description": "JSON.link makes it easy to author, document, share, and consume JSON",
+      "tech": "React, NodeJS",
+      "link": "https://json.link/",
+      "date": "Feb 02, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "alt": "Kostas Nasis",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "alt": "YingYing Zhang",
+          "link": " http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "02.",
+      "name": "my-wifi-sign",
+      "title": "My WiFi Sign",
+      "description": "Quickly create a printable sign with your WiFi credentials",
+      "tech": "NestJS, Vanilla JS",
+      "link": "https://mywifisign.com/",
+      "date": "Jan 25, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "alt": "Kostas Nasis",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "alt": "YingYing Zhang",
+          "link": " http://yingyingzhang.com/"
+        }
+      ]
+    },
+    {
+      "index": "01.",
+      "name": "badger",
+      "title": "Badger",
+      "description": "Badger is a fun, self-service name badge printer",
+      "tech": "Go, Vanilla JS",
+      "link": "http://badger.ink/",
+      "date": "Jan 08, 2020",
+      "members": [
+        {
+          "name":"cody",
+          "alt": "Cody Mikol",
+          "link": "http://codymikol.com/"
+        },
+        {
+          "name":"kostas",
+          "alt": "Kostas Nasis",
+          "link": "http://kostasnasis.com/"
+        },
+        {
+          "name":"yy",
+          "alt": "YingYing Zhang",
+          "link": " http://yingyingzhang.com/"
+        }
+      ]
+    }
+  ]
+
+    // If you're reading this and wondering why I'm doing things this way, its because this was written in an old timey language called liquid and I wanted to rewrite everything into regular old HTML in under an hour :)
+
+      window.addEventListener("load", () => {
+
+    const workContainer = document.getElementById("work");
+
+    projects.forEach((p) => {
+      
+      const project = document.createElement("div");
+      project.classList.add("project");
+      
+      const link = document.createElement("a");
+      ["mt-4", "og-project"].forEach(clazz => link.classList.add(clazz))
+      link.href = p.link
+      
+      const image = document.createElement("img");
+      image.src = `assets/ogs/og-${p.name}.png`;
+      image.alt = project.title;
+      
+      const title = document.createElement("h2");
+      title.innerText = p.title;
+
+      const description = document.createElement("p");
+      ["text-center", "text-mono", "text-green", "text-base", "md:text-left"].forEach(clazz => description.classList.add(clazz));
+      description.innerText = p.tech
+
+      project.appendChild(link)
+      project.appendChild(title)
+      project.appendChild(description)
+
+      link.appendChild(image)
+
+      workContainer.appendChild(project)
+    })
+    });
+
+    })()
+    </script>
+
+</head>
+<body>
+
+<nav>
+    <div class="formatted-name">
+        { <img src="assets/images/smile.svg" alt="Have a wonderful day c:"> }
+    </div>
+    <div>
+        <a class="header-link" href="#about">About</a>
+        <a class="header-link" href="#work">Work</a>
+    </div>
+</nav>
+
+<main>
+<p class="intro">Hey 👋🏻 I’m Cody,a software engineer based in Nazareth, PA. My hobby is programming, so I work after work, and
+    then wake up and work some more.</p>
+<div>
+    <a href="#work" class="rotated-link">Ok, show me the work</a>
+</div>
+
+<section id="work" class="project-container"></section>
+
+<section class="about-container">
+    <div id="about" class="about">
+        <div class="about-inner">
+            <h2>About Cody</h2>
+            <p>
+                Software Engineer currently doing R&D at Jack Henry and Associates. Most spare time is spent hacking
+                on side projects with <a style="color: white" href="http://justshipped.io" target="_blank">JustShipped</a> or contributing to various FOSS projects.
+            </p>
+            <p>Here are a few technologies I&apos;ve been working with recently</p>
+            <div class="skills">
+                <ul>
+                    <li>Vue</li>
+                    <li>React</li>
+                    <li>Svelte</li>
+                    <li>AngularJS</li>
+                </ul>
+                <ul>
+                    <li>Kotlin</li>
+                    <li>NodeJS</li>
+                    <li>Java</li>
+                    <li>Go</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portrait">
+        <img class="me" src="assets/images/cody.png" alt="A picture of me Cody Mikol, very exciting stuff!">
+        <div style="display: flex;">
+            <p class="rotated-link">I don’t look this<br/> serious in real life</p>
+            &nbsp;&nbsp;&nbsp;<img class="rotated-link smile-boi" src="assets/images/white-smile.svg" alt="Have a wonderful day c:">
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div style="display: flex; flex-direction: row">
+        <a href="mailto:codymikol@gmail.com" class="get-in-touch rotated-link">Get in touch</a>
+        <img src="assets/images/arrow.svg" style="transform: translate(15px, -22px);"
+             alt="Its an arrow pointing at me, how exciting is that?">
+    </div>
+    <div class="bottom-container">
+        <div class="contact-icon-container">
+            <div>
+                <a href="https://www.linkedin.com/in/cody-mikol-684a32b3/" target="_blank">
+                    <button>
+<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.69967 23.9999V7.80712H0.317543V23.9999H5.69967ZM3.0093 5.59494C4.88614 5.59494 6.05438 4.35153 6.05438 2.79768C6.01942 1.20878 4.88621 -0.00012207 3.04492 -0.00012207C1.20391 -0.00012207 0 1.2088 0 2.79768C0 4.3516 1.16796 5.59494 2.97416 5.59494H3.00913H3.0093ZM8.67866 23.9999H14.0608V14.957C14.0608 14.4731 14.0957 13.9896 14.2379 13.6437C14.627 12.6767 15.5125 11.6753 16.9993 11.6753C18.9469 11.6753 19.726 13.1602 19.726 15.337V23.9998H25.1078V14.715C25.1078 9.7412 22.4525 7.42696 18.9114 7.42696C16.008 7.42696 14.7332 9.04989 14.025 10.1553H14.0609V7.80678H8.67878C8.74941 9.32622 8.67878 23.9995 8.67878 23.9995L8.67866 23.9999Z" fill="#828282"/>
+</svg>
+</button>
+                </a>
+                <a href="https://github.com/codymikol" target="_blank">
+                    <button>
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.9875 0.384279C6.25938 0.381154 0 6.6374 0 14.3593C0 20.4655 3.91562 25.6562 9.36875 27.5624C10.1031 27.7468 9.99063 27.2249 9.99063 26.8687V24.4468C5.75 24.9437 5.57812 22.1374 5.29375 21.6687C4.71875 20.6874 3.35938 20.4374 3.76562 19.9687C4.73125 19.4718 5.71562 20.0937 6.85625 21.778C7.68125 22.9999 9.29062 22.7937 10.1062 22.5905C10.2844 21.8562 10.6656 21.1999 11.1906 20.6905C6.79688 19.903 4.96562 17.2218 4.96562 14.0343C4.96562 12.4874 5.475 11.0655 6.475 9.91865C5.8375 8.02803 6.53438 6.40928 6.62813 6.16865C8.44375 6.00615 10.3312 7.46865 10.4781 7.58428C11.5094 7.30615 12.6875 7.15928 14.0063 7.15928C15.3313 7.15928 16.5125 7.3124 17.5531 7.59365C17.9063 7.3249 19.6562 6.06865 21.3438 6.22178C21.4344 6.4624 22.1156 8.04365 21.5156 9.90928C22.5281 11.0593 23.0438 12.4937 23.0438 14.0437C23.0438 17.2374 21.2 19.9218 16.7938 20.6968C17.1712 21.0679 17.4708 21.5106 17.6753 21.9988C17.8797 22.4871 17.9848 23.0112 17.9844 23.5405V27.0562C18.0094 27.3374 17.9844 27.6155 18.4531 27.6155C23.9875 25.7499 27.9719 20.5218 27.9719 14.3624C27.9719 6.6374 21.7094 0.384279 13.9875 0.384279V0.384279Z" fill="#13AA52"/>
+</svg>
+</button>
+                </a>
+                <a href="mailto:codymikol@gmail.com" target="_blank">
+                    <button>
+<svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24.6666 0.333252H3.33329C1.86663 0.333252 0.679959 1.53325 0.679959 2.99992L0.666626 18.9999C0.666626 20.4666 1.86663 21.6666 3.33329 21.6666H24.6666C26.1333 21.6666 27.3333 20.4666 27.3333 18.9999V2.99992C27.3333 1.53325 26.1333 0.333252 24.6666 0.333252ZM24.6666 5.66658L14 12.3333L3.33329 5.66658V2.99992L14 9.66658L24.6666 2.99992V5.66658Z" fill="#828282"/>
+</svg>
+</button>
+                </a>
+            </div>
+        </div>
+        <p class="copyright">©&nbsp;2020&nbsp;Cody&nbsp;Mikol. All&nbsp;rights&nbsp;reserved.</p>
+    </div>
+</section>
+
+</main>
+
+</body>
+</html>
+work after work, and then wake up and work some more.
+Ok, show me the work
