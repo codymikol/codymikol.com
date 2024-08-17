@@ -26,7 +26,3 @@ jobs:
       - name: Deploy to GCP storage bucket
         run: |
           gsutil -m rsync -r ./public gs://${{ secrets.GCP_BUCKET_NAME }}
-
-      - name: Make rsync files public
-        run: |
-          gsutil -m acl ch -r -u AllUsers:R gs://${{ secrets.GCP_BUCKET_NAME }}
