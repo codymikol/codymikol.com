@@ -3,17 +3,25 @@ on:
   push:
     branches: [ main ]
 jobs:
-  build-push-gcp-bucket:
+  deploy:
+    permissions:
+      contents: read
+      packages: write
+      issues: write
     name: Build and push to GCP bucket
     runs-on: ubuntu-latest
     steps:
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v2
+        with:
+          credentials: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Configure GCP SDK 
         uses: google-github-actions/setup-gcloud@v2
         with:
-          service_account_key: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           export_default_credentials: true
 
