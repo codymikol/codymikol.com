@@ -1,0 +1,27 @@
+name: Build and deploy application to GCP
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-push-gcp-bucket:
+    name: Build and push to GCP bucket
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure GCP SDK 
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          export_default_credentials: true
+
+      - name: Deploy to GCP storage bucket
+        run: |
+          gsutil -m rsync -r ./public gs://${{ secrets.GCP_BUCKET_NAME }}
+
+      - name: Make rsync files public
+        run: |
+          gsutil -m acl ch -r -u AllUsers:R gs://${{ secrets.GCP_BUCKET_NAME }}
+
