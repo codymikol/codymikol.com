@@ -11,14 +11,14 @@ jobs:
     name: Build and push to GCP bucket
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
       - name: Authenticate to GCP
         uses: google-github-actions/auth@v2
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
-
-      - name: Checkout code
-        uses: actions/checkout@v4
 
       - name: Configure GCP SDK 
         uses: google-github-actions/setup-gcloud@v2
@@ -30,4 +30,3 @@ jobs:
       - name: Make rsync files public
         run: |
           gsutil -m acl ch -r -u AllUsers:R gs://${{ secrets.GCP_BUCKET_NAME }}
-
