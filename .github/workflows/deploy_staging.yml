@@ -15,7 +15,6 @@ jobs:
         uses: codymikol/gcp-deploy@v1
         with:
           dist_directory: './public'
-        secrets:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           bucket_name: ${{ secrets.GCP_BUCKET_NAME }}
           credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
