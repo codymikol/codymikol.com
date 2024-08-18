@@ -1,7 +1,7 @@
 name: Build and deploy staging to GCP
 on:
   push:
-    branches: [ main ]
+    branches: [ production ]
 jobs:
   deploy:
       uses: codymikol/gcp-deploy/.github/workflows/gcp_bucket_rsync.yml@v1
@@ -9,5 +9,5 @@ jobs:
         dist_directory: './public'
       secrets:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
-        bucket_name: ${{ secrets.STAGING_GCP_BUCKET }}
+        bucket_name: ${{ secrets.PRODUCTION_GCP_BUCKET }}
         credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
