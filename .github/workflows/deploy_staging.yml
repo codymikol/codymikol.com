@@ -1,0 +1,20 @@
+name: Build and deploy staging to GCP
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    permissions:
+      contents: read
+      packages: write
+      issues: write
+    name: Build and push to GCP bucket
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GCP 
+        uses: codymikol/gcp-deploy@v1
+        with:
+          dist_directory: './public'
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          bucket_name: ${{ secrets.GCP_BUCKET_NAME }}
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
