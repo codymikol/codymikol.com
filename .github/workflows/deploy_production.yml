@@ -1,4 +1,4 @@
-name: Build and deploy staging to GCP
+name: Build and deploy production to GCP
 on:
   push:
     branches: [ production ]
